@@ -36,6 +36,17 @@ Super-agent 通过 GitHub Issue 接收任务（工单）。在 Issue 中 @testAg
 @testAgent-hub 新建 docs/guide.md，写三段：安装、使用、FAQ
 ```
 
+也可以使用 GitHub CLI 在终端直接创建同样的工单：
+
+```bash
+gh issue create \
+  --repo likangda6/super-agent \
+  --title "新建 docs/guide.md" \
+  --body "@testAgent-hub 新建 docs/guide.md，写三段：安装、使用、FAQ"
+```
+
+命令会输出新 Issue 的链接，后续处理进度可以在该 Issue 中查看。
+
 ### 在已有工单中补充要求
 
 在对应的 Issue 下评论并 @testAgent-hub，即可补充或调整需求，不需要另开 Issue。
